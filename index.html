@@ -2,59 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>The basic language of the web: HTML</title>
+    <title>The Basic Language of the Web: HTML</title>
+
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- just commenting out.
-    <h1>This is a test header</h1>
-    <h2>This is a test header</h2>
-    <h3>This is a test header</h3>
-    <h4>This is a test header</h4>
-    <h5>This is a test header</h5>
-    <h6>This is a test header</h6>
-    -->
-    <h1>Bobas Page</h1>
+    <header>
+      <h1>📘 The Code Magazine</h1>
 
-    <h3>Purpose of this page</h3>
+      <nav>
+        <!--Bobas page is a personal project in the works, please feel free to click on it-->
+        <a href="index.html">Bobas page</a>
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+    </header>
 
-  <article>
-    <p>
-      In the future I will be making this into my photography page. 
-      It will be my personal side project! 
-    <p>
-      Official start date using HTML is <strong> OCT 8 2022</strong>
-    </p>
-    </p>
-    <p>
-      Link to my Instagram page here &rarr;
-      <a
-          href="https://www.instagram.com/travis_jphotos/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <button>Travis_jphotos</button>
-      </a>
-      </button>
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+
+        <img
+          src="img/laura-jones.jpg"
+          alt="The author Laura Jones"
+          height="50"
+          width="50"
+        />
+
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
+
+        <img
+          src="img/post-img.jpg"
+          alt="related picture to HTML course"
+          width="500"
+          height="200"
+        />
+      </header>
+
+      <p>
+        All modern websites and web applications are built using three
+        <strong><em>fundamental</em></strong>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web. In this post, let's focus on HTML. We will learn what HTML is all
+        about, and why you too should learn it.
       </p>
 
-      <img
-        src="https://dsm01pap003files.storage.live.com/y4mjida2_ag2QRQUT7w4VI5oDC0fZFXA1cYsTw-bkvvWEaoFXGdiNj7YtbzPP06jEXAE8Cb6HCAB0X2ILWyrEeCKVtu9H7DSggtu6A6b-wJBxZWVUq9UjxBUCVaCwcPl72glva359lUgpyrVqj6nGaQe5l3VnwZz4xdF_t9kJrmewVeGMEqWrboM-od3dOOBGv1?width=3448&height=4310&cropmode=none"
-        height="20%"
-        width="20%"
-        alt="I am the best model Ever 🐶"
-      />
-      <img
-        src="https://dsm01pap003files.storage.live.com/y4mFoShbu51OwcjzpIv5UbzbTWelzuVQsgDkSPHhsxUhTp14USpfoVUH1fTZbhtsB11Ll5ArnRUmiVrWvHOtNY9Xl5uM1wbaoJvjJuAUYeZjo1khw67NYryeUu135J7izAQKAZfEFJnG_g65jvoqshDEYabNdj2J7G9quBxLUyvVWwH7GwHrDUVKPqUXfj2_iDo?width=3786&height=4732&cropmode=none"
-        height="20%"
-        width="20%"
-        alt="I have the best photos ever! - Boba 🐶"
-      />
-    </p>
-  </article>
+      <h2>What is HTML?</h2>
 
-    <p>
-      <strong>To go back to the main project page &rarr;</strong>
-      <a href="project.html">Main project page</a>.
-    </p>
+      <p>
+        HTML stands for HyperText Markup Language. It's a markup language that
+        web developers use to structure and describe the content of a webpage
+        (not a programming language). HTML consists of elements that describe
+        different types of content: paragraphs, links, headings, images, video,
+        etc. Web browsers understand HTML and render HTML code as websites.
+      </p>
+
+      <h2>The 3 parts to an HTML element</h2>
+
+      <ul>
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ul>
+
+      <h2>Why should you learn HTML?</h2>
+
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+
+      <p>Hopefully you learned something new here. See you next time!</p>
+
+      <p>
+        <!-- Generic link to Youtube.com below -->
+        You can learn more at
+        <a href="https://youtube.com" target="_blank" rel="noreferrer noopener"
+          >Youtube.com
+        </a>
+      </p>
+    </article>
+
+    <aside>
+      <h3>Related posts</h3>
+
+      <ul class="related">
+        <li>
+          <img
+            src="img/related-1.jpg"
+            alt="A man is coding on a laptop"
+            width="100"
+            height="100"
+          />
+          <a href="#">How to Learn Web Development</a>
+          <p class="related-author">By Jonas Schmedtmann</p>
+        </li>
+
+        <li>
+          <img
+            src="img/related-2.jpg"
+            alt="Lightning strikes"
+            width="100"
+            height="100"
+          />
+          <a href="#">The Unknown Powers of CSS</a>
+          <p class="related-author">By Jim Dillon</p>
+        </li>
+
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="Javascript code is shown"
+            width="100"
+            height="100"
+          />
+          <a href="#">Why JavaScript is Awesome</a>
+          <p class="related-author">By Matilda</p>
+        </li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
