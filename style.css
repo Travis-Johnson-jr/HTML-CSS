@@ -5,10 +5,17 @@ p,
 li,
 nav {
   font-family: sans-serif;
+  color: #444;
 }
 
 nav {
   font-size: 25px;
+}
+
+h1,
+h2,
+h3 {
+  color: #13a0b6;
 }
 
 h1 {
@@ -60,3 +67,42 @@ li {
 .related {
   list-style: none;
 }
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* li:nth-child(odd) {
+  color: red;
+} */
+
+/* Demo: This will not work because the p element is not the first child of article. */
+article p:first-child {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  font-weight: bold;
+  text-decoration: solid underline purple;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+/* a:active {
+  background-color: blue;
+  font-style: italic;
+} */
