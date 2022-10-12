@@ -1,15 +1,27 @@
-h1,
-h2,
-h3,
-p,
-li,
-nav {
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   color: #444;
+  font: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 50%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
 }
 
 nav {
-  font-size: 25px;
+  font-size: 20px;
+}
+
+article {
+  margin-bottom: 60px;
 }
 
 h1,
@@ -21,12 +33,14 @@ h3 {
 h1 {
   font-size: 26px;
   text-transform: uppercase;
-  font-style: italic;
+  font-style: bold;
 }
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
+
 h3 {
   font-size: 20px;
   text-transform: uppercase;
@@ -36,10 +50,22 @@ h3 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -70,22 +96,34 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 30px;
 }
 
 aside {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  /* width: 850px; */
 }
 
 /* li:nth-child(odd) {
   color: red;
 } */
 
-/* Demo: This will not work because the p element is not the first child of article. */
-article p:first-child {
+/* Demo: This will not work because the p element is not the first child of article,
+but it will work on the project page. */
+/* article p:first-child {
   color: red;
-}
+} */
 
 a:link {
   color: #1098ad;
@@ -106,3 +144,8 @@ a:visited {
   background-color: blue;
   font-style: italic;
 } */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
