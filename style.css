@@ -182,3 +182,16 @@ a:visited {
   bottom: 50px;
   right: 50px;
 }
+
+/* Float lessons */
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
